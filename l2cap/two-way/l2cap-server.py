@@ -8,7 +8,7 @@ server_sock.listen(1)
 
 client_sock,address = server_sock.accept()
 print "Accepted connection from ",address
-print " "
+print " \n"
 
 while 1:
     data = client_sock.recv(1024)
@@ -20,7 +20,7 @@ while 1:
 
     msg = raw_input("Message to send : ")
     client_sock.send(msg)
-
+    print "\nMessage sent... Waiting for response\n"
     if msg == '-1':
         break
 
