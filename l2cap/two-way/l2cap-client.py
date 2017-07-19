@@ -15,10 +15,10 @@ port = 0x1001
 sock.connect((bd_addr, port))
 print "Connected to ",(bd_addr, port)
 
-
+print "Waiting for message..."
 while 1:
 
-    print "\n \n"
+    print "\n"
     msg = raw_input('Message to send : ')
     sock.send(msg)
     print "\nMessage sent.. Waiting for response...\n"
