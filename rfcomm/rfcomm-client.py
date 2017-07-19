@@ -1,6 +1,7 @@
 import bluetooth
 import time 
-bd_addr ="28:18:78:48:90:7C"
+#bd_addr ="28:18:78:48:90:7C" #Surface
+bd_addr ="B8:27:EB:05:DD:D3" #pi
 
 port = 1
 
