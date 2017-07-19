@@ -2,7 +2,7 @@ import bluetooth
 
 server_sock=bluetooth.BluetoothSocket( bluetooth.L2CAP )
 
-port = 0x1389
+port = 0x1001
 server_sock.bind(("",port))
 server_sock.listen(1)
 
