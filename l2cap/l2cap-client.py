@@ -1,4 +1,5 @@
 import bluetooth
+import time
 
 sock=bluetooth.BluetoothSocket(bluetooth.L2CAP)
 
@@ -10,7 +11,12 @@ bd_addr ="28:18:78:48:90:7C" # Hollis surface
 port = 0x1001
 
 sock.connect((bd_addr, port))
-
-sock.send("hello!!")
-
+while 1:
+    msg = raw_input('Message to send : ')
+    a = time.time
+    sock.send(msg)
+    b = time.time
+    print "Sent in "+str(b-a)+" seconds."
+    if msg == '-1':
+        break
 sock.close()
