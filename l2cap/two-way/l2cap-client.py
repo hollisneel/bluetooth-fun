@@ -7,7 +7,7 @@ sock=bluetooth.BluetoothSocket(bluetooth.L2CAP)
 bd_addr ="28:18:78:48:90:7C" # Hollis surface
 #bd_addr ="B8:27:EB:05:DD:D3" #pi
 
-print "Welcome to two way bluetooth comms \n Please follow instructions!\n \n"
+print "Welcome to l2cap fun! Please follow instructions.\n"
 
 port = 0x1001
 
