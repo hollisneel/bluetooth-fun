@@ -6,6 +6,8 @@ port = 0x1001
 server_sock.bind(("",port))
 server_sock.listen(1)
 
+print "Welcome to l2cap fun! Please follow instructions.\n"
+
 client_sock,address = server_sock.accept()
 print "Accepted connection from ",address
 print " \n"
