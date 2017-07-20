@@ -15,7 +15,7 @@ print "Accepted connection from ",address
 print "\nWaiting on incoming message ..."
 while 1:
     print " "
-    data = client_sock.recv(4294967296)
+    data = client_sock.recv(65536)
     print "Received [%s]" %data
     print " "
     if data == "-1":

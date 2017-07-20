@@ -26,7 +26,7 @@ while 1:
     print "Bluetooth Speed [%s] B/s" %round(utf8len(msg)/(b-a),2)
     print " "
     print "Waiting on incoming message ..."
-    data = sock.recv(4294967296) # recieve 1024 bytes
+    data = sock.recv(65536) # recieve 1024 bytes
     print "Received [%s]" %data
     print " "
 sock.close()
