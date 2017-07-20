@@ -22,11 +22,11 @@ while 1:
     sock.send(msg)
     b = time.time()
     print "---- Sending Stats ----"
-    print "Send Time : " ,round(b-a,3)
+    print "Send Time : " ,round(b-a,6)
     print "Bluetooth Speed [%s] B/s" %round(utf8len(msg)/(b-a),2)
     print " "
     print "Waiting on incoming message ..."
-    data = sock.recv(1024) # recieve 1024 bytes
+    data = sock.recv(4294967296) # recieve 1024 bytes
     print "Received [%s]" %data
     print " "
 sock.close()
